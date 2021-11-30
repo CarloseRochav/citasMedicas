@@ -15,6 +15,7 @@ namespace ProyectoEquipo3_1.Controllers
 
         public string insertarRegistro(Admin admin)
         {
+            
             try
             {
                 dao.insertarRegistro(admin);

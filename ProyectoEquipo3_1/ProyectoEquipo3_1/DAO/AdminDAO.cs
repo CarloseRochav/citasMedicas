@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using ProyectoEquipo3_1.Models;
 using ProyectoEquipo3_1.Connection;
-using ProyectoEquipo3_1.Models;
 //using ProyectoEquipo3_1.Connection;
 
 namespace ProyectoEquipo3_1.DAO
@@ -49,4 +48,4 @@ namespace ProyectoEquipo3_1.DAO
         }
 
     }
-}
+

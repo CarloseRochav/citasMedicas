@@ -17,8 +17,8 @@ IdMedico int primary key not null,
 ApellidoPaterno varchar(30)not null,
 ApellidoMaterno varchar(30)not null,
 Nombre varchar(30)not null,
-Genero varchar (15)not null,
-FechaNacimiento datetime not null,
+Genero char (15)not null,
+FechaNacimiento date not null,
 CorreoElectronico varchar(30) not null,
 Contraseña varchar(30) not null,
 IDEspecialidad_Nombre VARCHAR(40) not null FOREIGN KEY REFERENCES Especialidad(IDEspecialidad_Nombre)
@@ -37,16 +37,22 @@ IdPaciente int primary key not null,
 ApellidoPaterno varchar(30)not null,
 ApellidoMaterno varchar(30)not null,
 Nombre varchar(30)not null,
-Genero varchar (15)not null,
-FechaNacimiento datetime not null,
+Genero char not null,
+FechaNacimiento date not null,
 CorreoElectronico varchar(30) not null,
 Contraseña varchar(30) not null,
 )
 
+--DROP TABLE PACIENTE;
+--DROP DATABASE CitasMedicas2
+
+USE Northwind;
+
+
 Create Table Cita(
 IdPaciente int not null FOREIGN KEY REFERENCES Paciente(Idpaciente),
 IdMedico Int not null FOREIGN KEY REFERENCES Medico(IdMedico),
-Fecha datetime not null,
+Fecha date not null,
 Hora TIME not null,
 Folio int primary key not null,
 StatusS varchar(20)
