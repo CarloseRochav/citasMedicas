@@ -106,7 +106,8 @@
     <Compile Include="Cliente_InicioCitas.Designer.cs">
       <DependentUpon>Cliente_InicioCitas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Connection\Conexion.cs" />
+    <Compile Include="Models\Conexion.cs" />
+    <Compile Include="DAO\AdminDAO.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +132,7 @@
     <Compile Include="Medico_InicioCitass.Designer.cs">
       <DependentUpon>Medico_InicioCitass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Admin.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ADM_Citas.resx">
@@ -376,8 +378,6 @@
   <ItemGroup>
     <None Include="Resources\cooltext398730640621890.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
