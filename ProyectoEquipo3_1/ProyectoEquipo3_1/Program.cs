@@ -16,7 +16,7 @@ namespace ProyectoEquipo3_1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ADM_RMedico());
+            Application.Run(new ADM_RClientes());
         }
     }
 }

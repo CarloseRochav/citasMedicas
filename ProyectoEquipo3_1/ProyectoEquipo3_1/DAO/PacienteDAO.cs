@@ -11,20 +11,25 @@ namespace ProyectoEquipo3_1.DAO
 {
     class PacienteDAO
     {
-        private const string sql_insertar = "INSERT INTO PACIENTE VALUES(?,?,?,?,?,?,?)";
-        Conexion conexion = new Conexion();
+        private const string sql_insertar = "INSERT INTO PACIENTE VALUES (@paterno,@materno,@nombre,@genero,@fecha,@correo,@contrasenia)";
+        static Conexion conexion = new Conexion();//Estatico
 
-        public static void insertarPaciente(Paciente pac)
+        public string insertarPaciente(Paciente pac)
         {
             SqlConnection conn = null;
             SqlCommand stmt = null;
 
             try
             {
-                conn = conexion.sql_getConnection();
+                conn = conexion.getConnection();
                 conn.Open();
                 stmt = new SqlCommand(sql_insertar, conn);
-                stmt.Parameters.AddWithValue("@", pac.getCorreo());
+                stmt.Parameters.AddWithValue("@paterno", pac.getPaterno());
+                stmt.Parameters.AddWithValue("@materno", pac.getMaterno());
+                stmt.Parameters.AddWithValue("@nombre", pac.getNombre());
+                stmt.Parameters.AddWithValue("@genero", pac.getGenero());
+                stmt.Parameters.AddWithValue("@fecha", pac.getFecha());
+                stmt.Parameters.AddWithValue("@correo", pac.getCorreo());
                 stmt.Parameters.AddWithValue("@contrasenia", pac.getContrasenia());
                 stmt.ExecuteNonQuery();
                 conn.Close();

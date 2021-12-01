@@ -35,3 +35,9 @@ C:\Users\ernes\Documents\Tareas\Workspace_C#\CitasMedicas\ProyectoEquipo3_1\Proy
 C:\Users\ernes\Documents\Tareas\Workspace_C#\CitasMedicas\ProyectoEquipo3_1\ProyectoEquipo3_1\obj\Debug\ProyectoEquipo3_1.csproj.CoreCompileInputs.cache
 C:\Users\ernes\Documents\Tareas\Workspace_C#\CitasMedicas\ProyectoEquipo3_1\ProyectoEquipo3_1\obj\Debug\ProyectoEquipo3_1.exe
 C:\Users\ernes\Documents\Tareas\Workspace_C#\CitasMedicas\ProyectoEquipo3_1\ProyectoEquipo3_1\obj\Debug\ProyectoEquipo3_1.pdb
+C:\Users\ernes\Documents\Tareas\Workspace_C#\CitasMedicas\ProyectoEquipo3_1\ProyectoEquipo3_1\bin\Debug\ProyectoEquipo3_1.exe.config
+C:\Users\ernes\Documents\Tareas\Workspace_C#\CitasMedicas\ProyectoEquipo3_1\ProyectoEquipo3_1\bin\Debug\ProyectoEquipo3_1.exe
+C:\Users\ernes\Documents\Tareas\Workspace_C#\CitasMedicas\ProyectoEquipo3_1\ProyectoEquipo3_1\bin\Debug\ProyectoEquipo3_1.pdb
+C:\Users\ernes\Documents\Tareas\Workspace_C#\CitasMedicas\ProyectoEquipo3_1\ProyectoEquipo3_1\bin\Debug\System.Data.SqlClient.dll
+C:\Users\ernes\Documents\Tareas\Workspace_C#\CitasMedicas\ProyectoEquipo3_1\ProyectoEquipo3_1\bin\Debug\System.Data.SqlClient.xml
+C:\Users\ernes\Documents\Tareas\Workspace_C#\CitasMedicas\ProyectoEquipo3_1\ProyectoEquipo3_1\obj\Debug\ProyectoEquipo3_1.csproj.CopyComplete

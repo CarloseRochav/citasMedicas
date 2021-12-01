@@ -2,7 +2,7 @@ Create DataBase CitasMedicas2
 Use CitasMedicas2
 
 Create table Administrador(
-IDAdministrador int primary key not null,
+IDAdministrador int identity(1,1) primary key not null,
 CorreoElectronico varchar(30),
 Contraseña varchar(30)
 )
@@ -13,7 +13,7 @@ Descripcion varchar(100)  not null
 )
 
 Create Table Medico(
-IdMedico int primary key not null,
+IdMedico int identity(1,1) primary key not null,
 ApellidoPaterno varchar(30)not null,
 ApellidoMaterno varchar(30)not null,
 Nombre varchar(30)not null,
@@ -25,7 +25,7 @@ IDEspecialidad_Nombre VARCHAR(40) not null FOREIGN KEY REFERENCES Especialidad(I
 )
 
 Create Table Horarios(
-IDHorario int primary key not null,
+IDHorario int identity(1,1) primary key not null,
 Hora_Entrada Time not null,
 Hora_Salida Time not null,
 IdMedico Int not null FOREIGN KEY REFERENCES Medico(IdMedico)
@@ -33,7 +33,7 @@ IdMedico Int not null FOREIGN KEY REFERENCES Medico(IdMedico)
 
 
 Create Table Paciente(
-IdPaciente int primary key not null,
+IdPaciente int identity(1,1) primary key not null,
 ApellidoPaterno varchar(30)not null,
 ApellidoMaterno varchar(30)not null,
 Nombre varchar(30)not null,
@@ -58,5 +58,6 @@ Folio int primary key not null,
 StatusS varchar(20)
 )
 
+SELECT * FROM PACIENTE;
 
 

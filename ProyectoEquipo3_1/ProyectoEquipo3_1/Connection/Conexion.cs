@@ -9,10 +9,10 @@ namespace ProyectoEquipo3_1.Connection
 {
     class Conexion
     {
-        private static string stringConexion = "server=LAPTOP-E0ORA0CH;database=CitasMedicas2;Trusted_Connection=true";//Linea de conexion a la base de datos
-        private SqlConnection sql_conexion = new SqlConnection(stringConexion);
+        private const string stringConexion = "server=LAPTOP-E0ORA0CH;database=CitasMedicas2;Trusted_Connection=true";//Linea de conexion a la base de datos
+        SqlConnection sql_conexion = new SqlConnection(stringConexion);
 
-        public SqlConnection sql_getConnection()//Metodo para obetener conexion
+        public SqlConnection getConnection()//Metodo para obetener conexion
         {
             return sql_conexion;
         }

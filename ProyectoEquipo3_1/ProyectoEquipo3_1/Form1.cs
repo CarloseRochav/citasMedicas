@@ -24,7 +24,8 @@ namespace ProyectoEquipo3_1
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            ADM_RClientes reCliente = new ADM_RClientes();
+            reCliente.Show();
         }
     }
 }

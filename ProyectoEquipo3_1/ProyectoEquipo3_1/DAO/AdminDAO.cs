@@ -26,7 +26,7 @@ namespace ProyectoEquipo3_1.DAO
             
                 try
                 {
-                    conn = conexion.sql_getConnection();
+                    conn = conexion.getConnection();
                     conn.Open();
                     stmt = new SqlCommand(sql_insertar, conn);
                     stmt.Parameters.AddWithValue("@correo", adm.getCorreo());
